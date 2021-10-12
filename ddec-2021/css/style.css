@@ -1,5 +1,5 @@
 /* resets de estilos */
-* {
+/* {
    margin: 0;
    padding: 0;
   }
@@ -9,10 +9,17 @@
 :root{
 
    --font-family-base:'Open Sans', sans-serif;
-   --font-family-alt:'Source Sans Pro', sans-serif;
+   --font-family-alt:'Roboto', sans-serif;
+   --font-family-c:'Roboto Mono', monospace;
   --color-white: #fff;
   --color-dark: #333;
    --color-bg: rgba(0,0,0,.1);
+   --color-red1: #3D0000;
+   --color-red2: #950101;
+   --color-blue: #A2D2FF;
+   --color-salmon: #FF865E;
+   --color-yellow: #FEE440;
+   --color-white2:  #FEF9EF;
 }
 
   html {
@@ -27,17 +34,30 @@
 
 /* body */
 
+body {
+  background-color: #FEF9EF;
+  background-image: url("fondoweb.png");
+}
+
   body {
-    font-family: var(--font-family-base); 
+    font-family: var(--font-family-alt); 
     font-size: 1rem;
      line-height: 1,5;
+     color: var(--color-dark);
       }
 
 /* Estilos tipograficos */    
 h1 {
-  font-family: 'Open Sans', sans-serif;
-  font-family: 'Source Sans Pro', sans-serif;
-      font-size: 40px;
+ font-family: var(--font-family-c);
+      font-size: 45px;
+      color: var(--color-white);
+    }
+    h2 {
+      font-family: var(--font-family-c);
+      font-size: 60 px;
+      color: var(--color-yellow);
+     text-align: center;
+       
     }
     
     /*container*/ 
@@ -51,24 +71,26 @@ h1 {
     /* cabecera */
   .site-header {
       padding: 2rem;
-      background-color: var(--color-bg);
+      background-color: var(--color-yellow);
     }
-.site-navigation {display: flex;
+.site-navigation {
+  display: flex;
   justify-content: space-evenly;
-  background-color: #333;
-
+  background-color: var(--color-blue);
+  font-family: var(--font-family-c)
 }
 .site-navigation a {
   flex-grow: 0;
   flex-shrink: 1;
   flex-basis: 100%;
   padding: .5rem 1rem;
-  color: var(--color-white);
-  background-color: var(--color-dark);
+  color: var(--color-white2);
+  background-color: var(--color-blue);
   text-align: center;
   text-decoration: none;
   font-size: .85rem;
   border: 1px solid currentColor ;
+
 
 }
 
@@ -80,5 +102,31 @@ h1 {
     /* Pie de página */
   .site-footer {
     padding: 2rem;
-    background-color: var(--color-bg);
+    background-color: var(--color-yellow);
+    margin:100px 100px ;
+    color: var(--color-white2);
+    text-align: right;
+    font-family: var(--font-family-base)
+  }
+
+  /* columnas */
+  .columna { background: var(--color-blue) ;
+    color: var(--color-white2);
+    padding: 50px;
+    width: 25%;
+    margin:10px;
+    
+  }
+
+  .padre
+  { display: flex;
+  }
+
+  p{ background-color: var(--color-salmon);
+    font-family: var(--font-family-base);
+    font-size: 15px;
+    text-align: center;
+   
+    padding: 40px;
+    color: var(--color-white2);
   }

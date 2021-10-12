@@ -1,0 +1,83 @@
+:root{
+ 
+    --font-family-base:'Open Sans', sans-serif;
+    --font-family-alt:'Roboto', sans-serif;
+    --font-family-c:'Roboto Mono', monospace;
+   --color-white: #fff;
+   --color-dark: #333;
+    --color-bg: rgba(0,0,0,.1);
+    --color-red1: #3D0000;
+    --color-red2: #950101;
+    --color-blue: #A2D2FF;
+    --color-salmon: #FF865E;
+    --color-yellow: #FEE440;
+    --color-white2:  #FEF9EF;
+ }
+
+ html {
+    font-size: 16px;
+  }
+
+  @media screen and ( max-width: 400px ) {
+  html  {
+    font-size: 13px;
+  
+}
+}
+
+
+ h1{
+    font-family: var(--font-family-c);
+    font-size: 45px;
+    color: var(--color-white);
+    text-align: center;
+}
+
+.site-header {
+display: flex;
+justify-content: space-around;
+background-color: var(--color-yellow);
+    padding: 2rem;
+  
+}
+.site-navigation {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--color-blue);
+    font-family: var(--font-family-c)
+  }
+.site-navigation a {
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 100%;
+    padding: .5rem 1rem;
+    color: var(--color-white2);
+    background-color: var(--color-blue);
+    text-align: center;
+    text-decoration: none;
+    font-size: .85rem;
+    border: 1px solid currentColor ;
+  
+  }
+  .site-navigation a:hover {
+    color: var(--color-dark);
+    background-color: var(--color-white);
+    border-color: var(--color-white)
+  }
+
+.home-presentation__description{ 
+    background-color: var(--color-salmon);
+    font-family: var(--font-family-base);
+    font-size: 15px;
+    text-align: center;
+    margin: 10px;
+    padding: 50px;
+    color: var(--color-white2);
+}
+.container {
+
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+      
+    }
